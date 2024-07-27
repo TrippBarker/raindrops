@@ -4,8 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>r a i n d r o p s</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div id="header">
+        <h1>R&emsp;A&emsp;I&emsp;N&emsp;D&emsp;R&emsp;O&emsp;P&emsp;S</h1>
+        <button id="settingsBTN" class="bordered">settings</button>
+    </div>
+    <div id="dropsCont">
+        <div id="settingsCont" class="bordered hidden">
+            <div class="inputCont">
+                <label for="dropsH">HEIGHT</label>
+                <input type="range" min="1" max="100" value="10" class="slider" name="dropsH" id="dropsH">
+                <p class="inputVal" id="dropsHVal">15</p>
+            </div>
+            <div class="inputCont">
+                <label for="dropsW">WIDTH</label>
+                <input type="range" min="1" max="100" value="10" class="slider" name="dropsW" id="dropsW">
+                <p class="inputVal" id="dropsWVal">20</p>
+            </div>
+            <div class="inputCont">
+                <label for="trail">TRAIL</label>
+                <input type="range" min="1" max="10" value="3" class="slider" name="trail" id="trail">
+                <p class="inputVal" id="trailVal">3</p>
+            </div>
+            <div class="inputCont">
+                <label for="rate">RATE</label>
+                <input type="range" min="1" max="15" value="5" class="slider" name="rate" id="rate">
+                <p class="inputVal" id="rateVal">5</p>
+            </div>
+            <div class="inputCont">
+                <label for="colorMode">MODE</label>
+                <select name="colorMode" id="colorMode" class="bordered">
+                    <option value="rainbow" selected>rainbow</option>
+                    <option value="random">random</option>
+                    <option value="monotone">monotone</option>
+                </select>
+            </div>
+            <div class="inputCont">
+                <button id="closeSettingsBTN" class="bordered">CLOSE</button>
+            </div>
+        </div>
+        <div id="drops" class="">
+        </div>
+    </div>
 </body>
+<script src="script.js"></script>
 </html>

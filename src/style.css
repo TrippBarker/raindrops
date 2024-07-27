@@ -1,0 +1,94 @@
+* {
+    font-family: "Share Tech Mono", monospace;
+    background-color: black;
+}
+
+#header {
+    color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    color: rgb(10, 175, 120);
+    height: 2rem;
+}
+
+button:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+
+#dropsCont {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#settingsCont {
+    color: aquamarine;
+    position: absolute;
+    z-index: 100;
+}
+
+label {
+    margin-right: 1rem;
+    width: 3rem;
+    user-select: none;
+}
+
+.inputCont {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputVal {
+    margin: 0px;
+    margin-left: 1rem;
+    width: 2rem;
+}
+
+#colorMode {
+    color: aquamarine;
+    margin-right: .5rem;
+    width: 11rem;
+}
+
+#drops {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.row div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.row {
+    width: 100%;
+}
+
+.bordered {
+    border-top: 2px solid grey!important;
+    border-left: 2px solid grey!important;
+    border-bottom: 2px solid darkgray!important;
+    border-right: 2px solid darkgray!important;
+}
+
+.small-bordered {
+    border: 1px solid rgb(46, 46, 46)!important;
+}
+
+.disabled {
+    opacity: 50%;
+}
+
+.hidden {
+    display: none;
+}
