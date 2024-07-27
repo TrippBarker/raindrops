@@ -74,7 +74,6 @@ function updateTrail(trail){
 
 function updateRate(rate){
     rateVal.textContent = rate.srcElement.value;
-    createDrops();
 }
 
 function toggleSettings(){
